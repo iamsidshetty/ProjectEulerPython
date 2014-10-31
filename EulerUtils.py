@@ -23,7 +23,7 @@ def prime_factors(a):
     if a == 0: return [0]
     if a == 1: return [1]
     b = 2
-    c = [2] # all prime numbers
+    c = [] # all prime numbers
     while a != 1:
         if a % b == 0:
             a /= b
@@ -34,4 +34,17 @@ def prime_factors(a):
 
     return set(c)
 
+# To check if a number is palindrome
+def is_palindrome(num):
+    rev = 0
+    orig = num
+
+    while num != 0:
+        rev = rev * 10 + (num % 10)
+        num /= 10
+
+    if orig == rev:
+        return True
+    else:
+        return False
 
