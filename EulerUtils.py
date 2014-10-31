@@ -20,8 +20,11 @@ def seive_of_eratosthenes(N):
 
 # prime factors
 def prime_factors(a):
-    if a == 0: return [0]
-    if a == 1: return [1]
+    if a == 0:
+        return [0]
+    if a == 1:
+        return [1]
+
     b = 2
     c = []  # all prime numbers
     while a != 1:
