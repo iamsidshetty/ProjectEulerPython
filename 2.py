@@ -1,4 +1,5 @@
 __author__ = 'sid'
+# https://projecteuler.net/problem=2
 
 # Fib = 0 1 1 2 3 5 8 13 21 34 .....
 # Problem Fib = 1 2 3 5 8 13 21 34 .....
@@ -10,6 +11,7 @@ __author__ = 'sid'
 #         return 2
 #     else:
 #         return fib(n - 1) + fib(n - 2)
+
 
 def fib_prob(val):
     even_sum = 2
@@ -25,5 +27,5 @@ def fib_prob(val):
         n_2 = num
     return even_sum
 
-
-print fib_prob(4000000)
+if __name__ == "__main__":
+    print fib_prob(4000000)

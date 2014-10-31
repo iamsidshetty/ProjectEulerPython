@@ -4,4 +4,9 @@ __author__ = 'sid'
 
 from EulerUtils import *
 
-print seive_of_eratosthenes(1000000)[10000]
+
+def st_prime():
+    print seive_of_eratosthenes(1000000)[10000]
+
+if __name__ == "__main__":
+    st_prime()

@@ -1,9 +1,10 @@
+__author__ = 'sid'
 # https://projecteuler.net/problem=5
 
-__author__ = 'sid'
 
 from EulerUtils import *
 import math
+
 # Brute Force
 # i = 20
 # while i % 2 != 0 or i % 3 != 0 or i % 4 != 0 or i % 5 != 0 or i % 6 != 0 or i % 7 != 0 or i % 8 != 0 or i % 9 != 0 or
@@ -24,8 +25,8 @@ def smallest_multiple(N):
 
     print int(result)
 
-
-smallest_multiple(20)
+if __name__ == "__main__":
+    smallest_multiple(20)
 
 
 

@@ -1,6 +1,6 @@
+__author__ = 'sid'
 # https://projecteuler.net/problem=4
 
-__author__ = 'sid'
 
 from EulerUtils import *
 

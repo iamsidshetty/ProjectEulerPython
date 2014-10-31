@@ -13,7 +13,7 @@ def sum_square_difference(N):
 
     print int(math.pow(square_of_sum, 2) - sum_of_squares)
 
-
-sum_square_difference(100)
+if __name__ == "__main__":
+    sum_square_difference(100)
 
 
