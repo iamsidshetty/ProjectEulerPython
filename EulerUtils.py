@@ -1,6 +1,7 @@
 __author__ = 'sid'
 # https://projecteuler.net/problems
 
+
 # prime number using seive_of_eratosthenes
 # n log log n
 def seive_of_eratosthenes(N):
@@ -35,8 +36,8 @@ def prime_factors(a):
         else:
             b += 1
 
-    return set(c)
-
+    # return set(c)
+    return c
 
 # To check if a number is palindrome
 def is_palindrome(num):
@@ -51,4 +52,15 @@ def is_palindrome(num):
         return True
     else:
         return False
+
+
+# factors
+def all_factors(number):
+    factors = set()
+    for i in xrange(1, number/2 + 1):
+        if number % i == 0:
+            factors.add(i)
+    factors.add(number)
+    return sorted(factors)
+
 
