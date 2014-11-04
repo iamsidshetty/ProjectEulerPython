@@ -3,8 +3,8 @@ __author__ = 'sid'
 
 
 def n_digit_fibonacci_number(n):
-    n_1 = 0
-    n_2 = 1
+    n_1 = 0           # first fibonacci number
+    n_2 = 1           # second fibonacci number
     count = 0
     while True:
         count += 1
