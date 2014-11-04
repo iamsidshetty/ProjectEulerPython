@@ -1,6 +1,8 @@
 __author__ = 'sid'
 # https://projecteuler.net/problems
 
+import string
+
 
 # prime number using seive_of_eratosthenes
 # n log log n
@@ -39,6 +41,7 @@ def prime_factors(a):
     # return set(c)
     return c
 
+
 # To check if a number is palindrome
 def is_palindrome(num):
     rev = 0
@@ -57,10 +60,35 @@ def is_palindrome(num):
 # factors
 def all_factors(number):
     factors = set()
-    for i in xrange(1, number/2 + 1):
+    for i in xrange(1, number / 2 + 1):
         if number % i == 0:
             factors.add(i)
     factors.add(number)
     return sorted(factors)
 
+
+# factorial of a number
+def fact(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fact(n - 1)
+
+
+# alphabet  number mapping
+def alphabet_number():
+    alpha = {}
+    for i, letter in enumerate(string.ascii_lowercase):
+        alpha[letter] = i + 1
+    return alpha
+
+
+# fibonacci numbers
+def fib(n):
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 2
+    else:
+        return fib(n - 1) + fib(n - 2)
 
