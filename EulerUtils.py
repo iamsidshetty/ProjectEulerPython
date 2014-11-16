@@ -92,3 +92,17 @@ def fib(n):
     else:
         return fib(n - 1) + fib(n - 2)
 
+# Better Fib Generator
+cache = [0] * 500
+
+
+def fibBetter(n):
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 2
+    else:
+        if cache[n] != 0:
+            return cache[n]
+        cache[n] = fib(n - 1) + fib(n - 2)
+        return cache[n]
